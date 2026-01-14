@@ -21,8 +21,8 @@ def index():
         }
 
         response = requests.get(BASE_URL, params=params)
-        print(response.url)  # DEBUG
-        print(response.text)  # DEBUG
+        print(response.url)  
+        print(response.text) 
         data = response.json()
 
         if data.get("cod") == 200:
